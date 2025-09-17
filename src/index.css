@@ -1,0 +1,136 @@
+/* Tailwind v4 */
+
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-Neutral-900: #162542;
+  --color-Neutral-400: #5d6d8f;
+  --color-Neutral-200: #e8eff2;
+  --color-Neutral-0: #fff;
+  --color-Orange-500: #f16718;
+  --color-Orange-300: #ff9b62;
+
+  /* Fonts  */
+  /* --font-Preset-1: "Barlow"; */
+  --font-sans: "Barlow";
+  /* Preset 1 */
+  --text-Preset-1: 56px;
+  --leading-Preset-1: 100%;
+  --tracking-Preset-1: 0px;
+  --font-weight-Preset-1: 900;
+  /* Text-Preset Mobile */
+  --text-Mobile-Preset-1: 48px;
+  --leading-Mobile-Preset-1: 100%;
+  --tracking-Mobile-Preset-1: 0px;
+  --font-weight-Mobile-Preset-1: 900;
+  /* Text Preset 2 */
+  --text-Preset-2: 32px;
+  --leading-Preset-2: 120%;
+  --tracking-Preset-2: 0px;
+  --font-weight-Preset-2: 900;
+  /* Text Preset 3 */
+  --text-Preset-3: 24px;
+  --leading-Preset-3: 120%;
+  --tracking-Preset-3: 0px;
+  --font-weight-Preset-3: 900;
+  /* Text Preset 4 */
+  --text-Text-Preset-4: 18px;
+  --leading-Preset-4: 150%;
+  --tracking-Preset-4: 0px;
+  --font-weight-Preset-4: 500;
+  /* Text Preset 5 */
+  --text-Preset-5: 16px;
+  --leading-Preset-5: 150%;
+  --tracking-Preset-5: 0px;
+  --font-weight-Preset-5: 500;
+  /* Text Preset 6 Bold */
+  --text-Preset-6: 16px;
+  --leading-Preset-6: 150%;
+  --tracking-Preset-6: 0px;
+  --font-weight-Preset-6: 700;
+  /* Fix later */
+  --spacing-spacing-400: 32px;
+
+  /* Spacing */
+  /* --spacing-xSpacing-0: 0px;
+  --spacing-xSpacing-025: 2px;
+  --spacing-xSpacing-050: 4px;
+  --spacing-xSpacing-075: 6px;
+  --spacing-xSpacing-100: 8px;
+  --spacing-xSpacing-125: 10px;
+  --spacing-xSpacing-150: 12px;
+  --spacing-xSpacing-200: 16px;
+  --spacing-xSpacing-250: 20px;
+  --spacing-xSpacing-300: 24px;
+  --spacing-xSpacing-400: 32px;
+  --spacing-xSpacing-500: 40px;
+  --spacing-xSpacing-600: 48px;
+  --spacing-xSpacing-800: 64px;
+  --spacing-xSpacing-100: 80px; */
+
+  /* Radius */
+  --radius-xRadius-0: 0px;
+  --radius-xRadius-4: 4px;
+  --radius-xRadius-6: 6px;
+  --radius-xRadius-8: 8px;
+  --radius-xRadius-10: 12px;
+  --radius-xRadius-12: 16px;
+  --radius-xRadius-20: 20px;
+  --radius-xRadius-24: 24px;
+  --radius-xRadius-full: 999px;
+
+  /* Spacing */
+  --spacing-Mobile: 91.8%;
+  --spacing-Tablet: 91.276042%;
+  /* Font family */
+  --font-Barlow: "Barlow";
+}
+/* @utility Preset-1 {
+  font-size: var(--text-Preset-1);
+  line-height: var(--leading-Preset-1);
+  letter-spacing: var(--tracking-Preset-1);
+  font-weight: var(--font-weight-Preset-1);
+} */
+
+/* @utility Mobile-Preset-1 {
+  font-size: var(--text-Mobile-Preset-1);
+  line-height: var(--leading-Mobile-Preset-1);
+  letter-spacing: var(--tracking-Mobile-Preset-1);
+  font-weight: var(--font-weight-Mobile-Preset-1);
+}
+
+@utility Preset-2 {
+  font-size: var(--text-Preset-2);
+  line-height: var(--leading-Preset-2);
+  letter-spacing: var(--tracking-Preset-2);
+  font-weight: var(--font-weight-Preset-2);
+}
+
+@utility Preset-3 {
+  font-size: var(--text-Preset-3);
+  line-height: var(--leading-Preset-3);
+  letter-spacing: var(--tracking-Preset-3);
+  font-weight: var(--font-weight-Preset-3);
+}
+
+@utility Preset-4 {
+  font-size: var(--text-Text-Preset-4);
+  line-height: var(--leading-Preset-4);
+  letter-spacing: var(--tracking-Preset-4);
+  font-weight: var(--font-weight-Preset-4);
+}
+
+@utility Preset-5 {
+  font-size: var(--text-Preset-5);
+  line-height: var(--leading-Preset-5);
+  letter-spacing: var(--tracking-Preset-5);
+  font-weight: var(--font-weight-Preset-5);
+}
+
+@utility Preset-6 {
+  font-size: var(--text-Preset-6);
+  line-height: var(--leading-Preset-6);
+  letter-spacing: var(--tracking-Preset-6);
+  font-weight: var(--font-weight-Preset-6);
+} */
