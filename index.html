@@ -21,6 +21,25 @@
   <body class="font-Barlow overflow-x-hidden">
     <main class="">
       <!-- header section -->
+      <!-- side bars -->
+      <section class="relative hidden lg:block">
+        <div>
+          <!-- right -->
+          <img
+            src="/assets/shared/pattern-square.svg"
+            alt="Decoration"
+            class="absolute z-10 hidden translate-x-320 translate-y-35 lg:block"
+          />
+        </div>
+        <div>
+          <!-- left -->
+          <img
+            src="/assets/shared/pattern-square.svg"
+            alt="Decoration"
+            class="absolute hidden -translate-x-40 translate-y-236 lg:block"
+          />
+        </div>
+      </section>
       <!-- Mx-5 is for Mobile mx-10 for mx-32 pc for desktop -->
       <section>
         <!-- Logo heading -->
@@ -29,7 +48,7 @@
         >
           <img src="/assets/shared/logo.svg" class="inline" alt="Logo" />
           <button
-            class="bg-Neutral-200 text-Neutral-900 text-Preset-6 font-Preset-6 leading-Preset-6 tracking-Preset-6 rounded-xRadius-8 p-3 capitalize md:px-3"
+            class="bg-Neutral-200 text-Neutral-900 text-Preset-6 font-Preset-6 leading-Preset-6 tracking-Preset-6 rounded-xRadius-8 p-3 capitalize md:px-3 lg:-translate-x-14"
           >
             PRE-ORDER NOW
           </button>
@@ -37,8 +56,8 @@
         <div
           class="mt-12 gap-1 min-md:grid min-md:grid-cols-2 min-md:grid-rows-[repeat(2,mincontent)] min-md:place-content-center lg:flex lg:gap-x-0"
         >
-          <div class="mt-10 flex flex-col">
-            <div class="mt-24">
+          <div class="mt-24 flex flex-col">
+            <div class="md:-mt-15 lg:mt-25">
               <h1
                 class="text-Neutral-900 text-Mobile-Preset-1 min-md:text-Preset-1 md:leading-Preset-1 md:tracking-Preset-1 min-md:font-Preset-1 leading-Mobile-Preset-1 tracking-Mobile-Preset-1 font-Mobile-Preset-1 mx-5 uppercase md:mb-5 lg:mx-32"
               >
@@ -56,7 +75,7 @@
               class="mx-5 my-4 flex place-content-start items-center lg:mx-0 lg:ml-32"
             >
               <button
-                class="bg-Neutral-200 text-Neutral-900 text-Text-Preset-6 font-Preset-6 leading-Preset-6 font-weight-Preset-6 tracking-Preset-6 rounded-xRadius-8 p-3 capitalize md:px-3"
+                class="bg-Orange-500 text-Text-Preset-6 font-Preset-6 leading-Preset-6 font-weight-Preset-6 tracking-Preset-6 rounded-xRadius-8 p-3 text-white capitalize md:px-3"
               >
                 PRE-ORDER NOW
               </button>
@@ -82,7 +101,7 @@
           >
             <img
               src="/assets/desktop/image-keyboard.jpg"
-              class="mb-5 rounded-xl"
+              class="mb-5 h-[500px] w-[750px] rounded-xl"
               alt="Keychron Keyboard"
             />
           </div>
@@ -99,11 +118,16 @@
 
       <!-- Secondary Images -->
       <div class="flex h-40 w-full overflow-hidden min-md:hidden">
-        <img
-          src="/assets/mobile/image-phone-and-keyboard.jpg"
-          alt="keyboard and phone"
-          class="-translate-x-4 rounded-xl"
-        />
+        <div class="relative">
+          <img
+            src="/assets/mobile/image-phone-and-keyboard.jpg"
+            alt="keyboard and phone"
+            class="-translate-x-4 rounded-xl"
+          />
+          <div
+            class="bg-Orange-500 absolute inset-0 -translate-x-4 rounded-xl opacity-70"
+          ></div>
+        </div>
         <img
           src="/assets/mobile/image-glass-and-keyboard.jpg"
           alt="keyboard and wine glass"
@@ -144,11 +168,16 @@
             <div
               class="flex h-[480px] w-full max-md:hidden md:gap-x-4 lg:gap-x-4"
             >
-              <img
-                src="/assets/desktop/image-phone-and-keyboard.jpg"
-                alt="keyboard and phone"
-                class="rounded-lg"
-              />
+              <div class="relative">
+                <img
+                  src="/assets/desktop/image-phone-and-keyboard.jpg"
+                  alt="keyboard and phone"
+                  class="h-[480px] rounded-4xl grayscale"
+                />
+                <div
+                  class="absolute inset-0 rounded-4xl bg-orange-500 opacity-65"
+                ></div>
+              </div>
               <img
                 src="/assets/desktop/image-glass-and-keyboard.jpg"
                 alt="keyboard and wine glass"
@@ -157,7 +186,7 @@
             </div>
           </div>
           <div
-            class="md-max:gap-2 flex-col gap-4 overflow-hidden max-lg:flex-col max-md:mt-10 max-md:flex max-md:gap-6 min-md:mt-10 min-md:flex min-md:flex-row min-md:gap-25 lg:w-1/4 lg:translate-x-25 lg:flex-col lg:gap-y-2"
+            class="md-max:gap-2 flex-col gap-4 overflow-hidden max-lg:flex-col max-md:mt-10 max-md:flex max-md:gap-6 min-md:mt-10 min-md:flex min-md:flex-row min-md:gap-25 lg:w-1/4 lg:translate-x-37 lg:flex-col lg:gap-y-2"
           >
             <h2
               class="text-Preset-2 leading-Preset-2 tracking-Preset-2 font-Preset-2 text-Neutral-900 uppercase"
