@@ -35,7 +35,7 @@
   --tracking-Preset-3: 0px;
   --font-weight-Preset-3: 900;
   /* Text Preset 4 */
-  --text-Text-Preset-4: 18px;
+  --text-Preset-4: 18px;
   --leading-Preset-4: 150%;
   --tracking-Preset-4: 0px;
   --font-weight-Preset-4: 500;
@@ -81,8 +81,8 @@
   --radius-xRadius-full: 999px;
 
   /* Spacing */
-  --spacing-Mobile: 91.8%;
-  --spacing-Tablet: 91.276042%;
+  /* --spacing-Mobile: 91.8%;
+  --spacing-Tablet: 91.276042%; */
   /* Font family */
   --font-Barlow: "Barlow";
 }

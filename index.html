@@ -18,13 +18,15 @@
     />
     <title>Frontend Mentor | Typemaster pre-launch landing page</title>
   </head>
-  <body class="font-Barlow">
+  <body class="font-Barlow overflow-x-hidden">
     <main class="">
       <!-- header section -->
-      <!-- Mx-5 is for Mobile -->
+      <!-- Mx-5 is for Mobile mx-10 for mx-32 pc for desktop -->
       <section>
         <!-- Logo heading -->
-        <div class="mx-5 my-4 flex place-content-between items-center">
+        <div
+          class="mx-5 my-4 flex place-content-between items-center min-lg:mx-32"
+        >
           <img src="/assets/shared/logo.svg" class="inline" alt="Logo" />
           <button
             class="bg-Neutral-200 text-Neutral-900 text-Preset-6 font-Preset-6 leading-Preset-6 tracking-Preset-6 rounded-xRadius-8 p-3 capitalize md:px-3"
@@ -32,20 +34,27 @@
             PRE-ORDER NOW
           </button>
         </div>
-        <div class="md:grid md:grid-cols-2 md:grid-rows-[repeat(2,mincontent)]">
-          <div class="mt-20">
-            <h1
-              class="text-Neutral-900 text-Mobile-Preset-1 md:text-Preset-1 md:leading-Preset-1 md:tracking-Preset-1 md:font-Preset-1 leading-Mobile-Preset-1 tracking-Mobile-Preset-1 font-Mobile-Preset-1 mx-5 md:mb-5"
+        <div
+          class="mt-12 gap-1 min-md:grid min-md:grid-cols-2 min-md:grid-rows-[repeat(2,mincontent)] min-md:place-content-center lg:flex lg:gap-x-0"
+        >
+          <div class="mt-10 flex flex-col">
+            <div class="mt-24">
+              <h1
+                class="text-Neutral-900 text-Mobile-Preset-1 min-md:text-Preset-1 md:leading-Preset-1 md:tracking-Preset-1 min-md:font-Preset-1 leading-Mobile-Preset-1 tracking-Mobile-Preset-1 font-Mobile-Preset-1 mx-5 uppercase md:mb-5 lg:mx-32"
+              >
+                Typemaster <br />
+                keyboard
+              </h1>
+              <p
+                class="text-Preset-5 lg:text-Preset-4 lg:leading-Preset-4 lg:tracking-Preset-4 lg:font-Preset-4 leading-Preset-5 tracking-Preset-5 font-Preset-5 mx-5 md:mb-5 lg:mx-32"
+              >
+                Improve your productivity and gaming without breaking the bank.
+                Upgrade to a high quality mechanical typing experience.
+              </p>
+            </div>
+            <div
+              class="mx-5 my-4 flex place-content-start items-center lg:mx-0 lg:ml-32"
             >
-              Typemaster keyboard
-            </h1>
-            <p
-              class="text-Preset-5 leading-Preset-5 tracking-Preset-5 font-Preset-5 mx-5 md:mb-5"
-            >
-              Improve your productivity and gaming without breaking the bank.
-              Upgrade to a high quality mechanical typing experience.
-            </p>
-            <div class="mx-5 my-4 flex place-content-start items-center">
               <button
                 class="bg-Neutral-200 text-Neutral-900 text-Text-Preset-6 font-Preset-6 leading-Preset-6 font-weight-Preset-6 tracking-Preset-6 rounded-xRadius-8 p-3 capitalize md:px-3"
               >
@@ -59,25 +68,37 @@
             </div>
           </div>
           <!-- Primary Tablet Image -->
-          <div class="mt-12 overflow-hidden md:col-start-2 md:row-span-full">
+          <div class="overflow-hidden max-md:hidden min-[1145px]:hidden">
             <img
-              src="/assets/tablet/image-keyboard.jpg"
-              class="translate-x-10 rounded-xl"
-              alt="Keychron Keyboard "
+              src="/assets/tablet/image-keyboard.jpg "
+              class="translate-x-15 overflow-hidden rounded-xl"
+              alt="Keychron Keyboard  "
+            />
+          </div>
+
+          <!-- Primary Image/ Large -->
+          <div
+            class="mt-12 mr-10 -translate-x-32.5 overflow-hidden max-[1143px]:hidden"
+          >
+            <img
+              src="/assets/desktop/image-keyboard.jpg"
+              class="mb-5 rounded-xl"
+              alt="Keychron Keyboard"
             />
           </div>
         </div>
       </section>
       <!-- Primary Image -->
-      <div class="mt-12 overflow-hidden md:hidden">
+      <div class="mt-12 overflow-hidden min-md:hidden">
         <img
           src="/assets/mobile/image-keyboard.jpg"
-          class="mb-5 h-[331px] w-[372px] translate-x-5 rounded-l-xl"
+          class="mb-5 h-[331px] w-[372px] translate-x-10 rounded-l-xl"
           alt="Keychron Keyboard"
         />
       </div>
+
       <!-- Secondary Images -->
-      <div class="flex h-40 w-full overflow-hidden md:hidden">
+      <div class="flex h-40 w-full overflow-hidden min-md:hidden">
         <img
           src="/assets/mobile/image-phone-and-keyboard.jpg"
           alt="keyboard and phone"
@@ -91,7 +112,7 @@
       </div>
 
       <!-- Square block -->
-      <div class="my-15 md:hidden">
+      <div class="mt-15 min-md:hidden">
         <img
           src="/assets/shared/pattern-square.svg"
           class="mx-auto h-15 w-15"
@@ -99,13 +120,13 @@
         />
       </div>
       <!-- Secondary Header -->
-      <section class="mx-5">
+      <section class="mx-5 flex gap-2 lg:mx-32">
         <!-- Secondary Heading -->
-        <div class="mt-10">
+        <div class="mt-10 min-[1127px]:flex">
           <!-- Tablet grid/Images -->
 
           <div
-            class="flex h-[320px] place-content-start gap-[24px] overflow-hidden"
+            class="flex h-[320px] place-content-around gap-[24px] overflow-hidden rounded-2xl max-md:hidden min-md:hidden"
           >
             <img
               src="/assets/tablet/image-phone-and-keyboard.jpg"
@@ -118,7 +139,26 @@
               class="rounded-2xl"
             />
           </div>
-          <div class="gap-22 md:mt-10 md:flex">
+          <div class="md:flex">
+            <!-- Secondary Images/ large -->
+            <div
+              class="flex h-[480px] w-full max-md:hidden md:gap-x-4 lg:gap-x-4"
+            >
+              <img
+                src="/assets/desktop/image-phone-and-keyboard.jpg"
+                alt="keyboard and phone"
+                class="rounded-lg"
+              />
+              <img
+                src="/assets/desktop/image-glass-and-keyboard.jpg"
+                alt="keyboard and wine glass"
+                class="rounded-2xl"
+              />
+            </div>
+          </div>
+          <div
+            class="md-max:gap-2 flex-col gap-4 overflow-hidden max-lg:flex-col max-md:mt-10 max-md:flex max-md:gap-6 min-md:mt-10 min-md:flex min-md:flex-row min-md:gap-25 lg:w-1/4 lg:translate-x-25 lg:flex-col lg:gap-y-2"
+          >
             <h2
               class="text-Preset-2 leading-Preset-2 tracking-Preset-2 font-Preset-2 text-Neutral-900 uppercase"
             >
@@ -139,9 +179,9 @@
       </section>
 
       <!-- Selling Point section -->
-      <section class="mx-5 mb-12">
+      <section class="mx-5 mb-12 lg:mx-32 lg:mt-15">
         <div
-          class="mb-xSpacing-800 flex flex-col md:grid md:grid-cols-2 md:gap-x-4 md:gap-y-5"
+          class="mb-xSpacing-800 flex flex-col md:grid md:grid-cols-2 md:gap-x-4 md:gap-y-4 lg:grid-cols-4 lg:grid-rows-1 lg:gap-x-4"
         >
           <!-- Box 1 -->
           <div class="mt-10">
@@ -153,7 +193,7 @@
             <!-- Box heading -->
             <div class="mt-10">
               <p
-                class="text-Preset-3 leading-Preset-3 tracking-Preset-3 font-Preset-3 text-Neutral-900 w-1/2 uppercase"
+                class="text-Preset-3 leading-Preset-3 tracking-Preset-3 font-Preset-3 text-Neutral-900 mb-4 w-1/2 uppercase"
               >
                 Highly <br />
                 Compatible
@@ -180,14 +220,14 @@
             <!-- Box heading -->
             <div class="mt-10">
               <p
-                class="text-Preset-3 leading-Preset-3 tracking-Preset-3 font-Preset-3 text-Neutral-900 uppercase"
+                class="text-Preset-3 leading-Preset-3 tracking-Preset-3 font-Preset-3 text-Neutral-900 mb-4 uppercase"
               >
                 Wireless <br />
                 with bluetooth
               </p>
             </div>
             <p
-              class="text-Neutral-400 text-Text-Preset-5 leading-Preset-5 tracking-Preset-5 font-Preset-5"
+              class="text-Neutral-400 text-Text-Preset-5 leading-Preset-5 tracking-Preset-5 font-Preset-5 mb-4"
             >
               Powerful 2.4G RF technology allows you to connect the cordless
               keyboard from up to 30ft away. Simply plug the unifying receiver
@@ -204,7 +244,7 @@
             <!-- Box heading -->
             <div class="mt-10">
               <p
-                class="text-Preset-3 leading-Preset-3 tracking-Preset-3 font-Preset-3 text-Neutral-900 uppercase"
+                class="text-Preset-3 leading-Preset-3 tracking-Preset-3 font-Preset-3 text-Neutral-900 mb-4 uppercase"
               >
                 High capacity<br />
 
@@ -224,14 +264,15 @@
             <img
               src="/assets/shared/icon-compatible.svg"
               alt=""
-              class="bg-Orange-500 w-xSpacing-800 h-xSpacing-800 rounded-xRadius-12 p-4"
+              class="bg-Orange-500 rounded-xRadius-12 p-4"
             />
             <!-- Box heading -->
             <div class="mt-10">
               <p
-                class="text-Preset-3 leading-Preset-3 tracking-Preset-3 font-Preset-3 text-Neutral-900 w-1/2 uppercase"
+                class="text-Preset-3 leading-Preset-3 tracking-Preset-3 font-Preset-3 text-Neutral-900 mb-4 uppercase"
               >
-                RGB backlit <br />
+                RGB backlit
+                <br />
                 modes
               </p>
               <p
@@ -254,6 +295,7 @@
         <p class="text-center">Typemaster 2021 | All Rights Reserved</p>
       </footer>
     </main>
+    <!-- mx-10 for desktop -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
